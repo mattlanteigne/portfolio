@@ -7,7 +7,7 @@ const Container = styled.div `
     clear: both;
     
     @media only screen and (min-width: 1200px) {
-        width: 55%;
+        width: 60%;
         float: right;
         margin: 5% 10%;
 }

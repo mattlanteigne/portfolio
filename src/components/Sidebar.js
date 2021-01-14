@@ -8,12 +8,12 @@ import github from '../assets/github.svg';
 
 
 const Container = styled.div `
-    margin: 5% 5%;
-    float: left;
+    margin: 0 5%;
 
     @media only screen and (min-width: 1200px) {
         width: 300px;
         position: fixed;
+        margin-top: 5%;
       } 
 `
 
@@ -23,17 +23,29 @@ const Logo = styled.img `
     display: block;
 
     @media only screen and (max-width: 1200px) {
-        width: 150px;
+        width: 225px;
         float: left;
       } 
 `
-
+const Socials = styled.div `
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+`
 
 const Social = styled.img `
-    vertical-align: middle;
     width: 40px;
-    margin: 25px auto;
-    display: block;
+    margin: 50px 25px;
+
+    box-shadow: 0px 2px 3px #222222,
+    0px 3px 4px #222222,
+    0px 4px 5px #222222;
+
+    @media only screen and (min-width: 1200px) {
+        vertical-align: middle;
+        margin: 25px auto;
+        display: block;
+    }
 `
 
 
@@ -41,10 +53,12 @@ export const Sidebar = () => {
     return (
         <Container>
             <Logo src = {logo} />
+            <Socials>
                 <a href="#"><Social src = {resume}  /></a>
                 <a href="#"><Social src = {email} /></a>
                 <a href="#"><Social src = {linkedin} /></a>
                 <a href="#"><Social src = {github} /></a>
+            </Socials>
         </Container>
     );
 }
