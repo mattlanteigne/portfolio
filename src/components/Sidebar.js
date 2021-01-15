@@ -14,18 +14,17 @@ const Container = styled.div `
         width: 300px;
         position: fixed;
         margin-top: 5%;
-      } 
+    } 
 `
 
 const Logo = styled.img `
     width: 300px;
     margin: 25px auto;
-    display: block;
 
     @media only screen and (max-width: 1200px) {
         width: 225px;
         float: left;
-      } 
+    } 
 `
 const Socials = styled.div `
     width: 100%;
@@ -35,11 +34,7 @@ const Socials = styled.div `
 
 const Social = styled.img `
     width: 40px;
-    margin: 50px 25px;
-
-    box-shadow: 0px 2px 3px #222222,
-    0px 3px 4px #222222,
-    0px 4px 5px #222222;
+    margin: 200px 25px;
 
     @media only screen and (min-width: 1200px) {
         vertical-align: middle;
