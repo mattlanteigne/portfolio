@@ -20,12 +20,13 @@ export const Navigation = () => {
           <Hamburger color="#E5E5E5"/>
         </Navbar.Toggle>
 
-      <Navbar.Collapse className="text-right">
+      <Navbar.Collapse bg="dark" className="text-right">
         <Nav className="ml-auto">
-          <Nav.Link href="#home" className="navbar-link">Home</Nav.Link>
-          <Nav.Link href="#home" className="navbar-link">Home</Nav.Link>
-          <Nav.Link href="#home" className="navbar-link">Home</Nav.Link>
-          <Nav.Link href="#home" className="navbar-link">Home</Nav.Link>
+          <Nav.Link href="#home" bsPrefix="link">Home</Nav.Link>
+          <Nav.Link href="#about" bsPrefix="link">About</Nav.Link>
+          <Nav.Link href="#experience" bsPrefix="link">Experience</Nav.Link>
+          <Nav.Link href="#projects" bsPrefix="link">Projects</Nav.Link>
+          <Nav.Link href="#contact" bsPrefix="link">Contact</Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>

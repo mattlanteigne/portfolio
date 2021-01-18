@@ -5,13 +5,13 @@ import v1 from '../assets/v1.png';
 
 const Container = styled.div `
     width: 90%;
-    margin: auto;
+    margin: 15% auto;
     clear: both;
-    
+
     @media only screen and (min-width: 1200px) {
         width: 60%;
         float: right;
-        margin: 5% 10%;
+        margin: 10% 10%;
     }
 `
 

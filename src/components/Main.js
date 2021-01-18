@@ -2,15 +2,15 @@ import styled from 'styled-components';
 
 const Container = styled.div `
     width: 90%;
-    margin: auto;
-    text-align: center; 
+    margin: 15% auto;
     clear: both;
-    
+    text-align: center;
+
     @media only screen and (min-width: 1200px) {
         width: 60%;
         float: right;
-        margin: 5% 10%;
-}
+        margin: 10% 10%;
+    }
 `
 const Hello = styled.h1 `
     font-size: 50pt;

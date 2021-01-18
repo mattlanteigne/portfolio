@@ -1,14 +1,21 @@
 import styled from 'styled-components';
 
 import logo from '../assets/logo.png';
-import resume from '../assets/resume.svg';
-import email from '../assets/email.svg';
-import linkedin from '../assets/linkedin.svg';
-import github from '../assets/github.svg';
 
+import { FaFile } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { FaEnvelope } from "react-icons/fa";
 
 const Container = styled.div `
     margin: 0 5%;
+
+    @media only screen and (max-width: 549px) {
+        width: 100%;
+        margin: auto;
+        display: inline-block;
+        text-align: center;
+    }
 
     @media only screen and (min-width: 1200px) {
         width: 300px;
@@ -18,13 +25,18 @@ const Container = styled.div `
 `
 
 const Logo = styled.img `
-    width: 300px;
-    margin: 25px auto;
+    width: 225px;
 
-    @media only screen and (max-width: 1200px) {
+    @media only screen and (min-width: 550px) {
         width: 225px;
         float: left;
+        margin: 25px auto;
     } 
+
+    @media only screen and (min-width: 1200px) {
+        width: 300px;
+        margin: 25px auto;
+    }
 `
 const Socials = styled.div `
     width: 100%;
@@ -32,9 +44,19 @@ const Socials = styled.div `
     text-align: center;
 `
 
-const Social = styled.img `
-    width: 40px;
+const Social = styled.div `
     margin: 200px 25px;
+    display: inline-block;
+    text-align: center;
+    font-size: 30pt;
+
+    @media only screen and (max-width: 550px) {
+        margin: 50px 10px;
+    }
+
+    @media only screen and (min-width: 550px) {
+        margin: 50px 25px;
+    }
 
     @media only screen and (min-width: 1200px) {
         vertical-align: middle;
@@ -49,12 +71,18 @@ export const Sidebar = () => {
         <Container>
             <Logo src = {logo} />
             <Socials>
-                <a href="#"><Social src = {resume}  /></a>
-                <a href="#"><Social src = {email} /></a>
-                <a href="#"><Social src = {linkedin} /></a>
-                <a href="#"><Social src = {github} /></a>
+                <Social><a href="#"><FaFile /></a></Social>
+                <Social><a href="#"><FaLinkedin /></a></Social>
+                <Social><a href="#"><FaGithub /></a></Social>
+                <Social><a href="#"><FaEnvelope /></a></Social>
             </Socials>
         </Container>
     );
 }
 export default Sidebar;
+
+
+
+
+
+

@@ -6,7 +6,7 @@ const Container = styled.div `
     text-align: center;
 `
 const Content = styled.p `
-    font-size: 12pt;
+    font-size: 10pt;
 `
 
 const Footer = () => {
