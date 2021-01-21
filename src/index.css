@@ -58,4 +58,18 @@ hr {
   text-decoration: none;
 }
 
+.projectlink {
+  margin-left: 2%;
+  font-size: 12pt;
+}
 
+.projectlink {
+  color: red;
+  margin-left: 2%;
+  font-size: 16pt;
+  display: inline-block;
+}
+
+.projectlink:hover {
+  color: yellow;
+}

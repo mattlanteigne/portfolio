@@ -2,16 +2,26 @@ import styled from 'styled-components';
 
 import v1 from '../assets/v1.png';
 
+import { FaGithub } from "react-icons/fa";
+import { FaExternalLinkAlt } from "react-icons/fa";
+
+
 
 const Container = styled.div `
     width: 90%;
-    margin: 15% auto;
+    margin: 25% auto;
     clear: both;
 
     @media only screen and (min-width: 1200px) {
         width: 60%;
         float: right;
-        margin: 10% 10%;
+        margin: 10%;
+    }   
+     
+    @media only screen and (min-width: 1500px) {
+        width: 60%;
+        float: right;
+        margin: 5%;
     }
 `
 
@@ -19,50 +29,168 @@ const Title = styled.h1 `
     
 `
 const Project = styled.div `
+    width: 100%;
     float: left;
-    margin-bottom: 25px;
+    margin-bottom: 100px;
 `
 
 const Imgleft = styled.img `
-    float: left;
-    display: inline-block;
-    width: 400px;
-    margin: 0 3% 0 0;
+    width: 280px;
+    display: block;
+    margin: 10% auto 3% auto;
+
+    @media only screen and (min-width: 500px) {
+        width: 350px;
+    }
+
+    @media only screen and (min-width: 1000px) {
+        float: left;
+        display: inline-block;
+        width: 350px;
+        margin: 0 1% 0 0;
+    }
+    
+    @media only screen and (min-width: 1500px) {
+        float: left;
+        display: inline-block;
+        width: 400px;
+        margin: 0 1% 0 0;
+    }
 `
 
-const Contentright = styled.div`
-    display: inline-block;
+const Contentright = styled.span`
+    width: 100%;
     float: right;
-    width: 50%;
+
+    @media only screen and (min-width: 1000px) {
+        display: inline-block;
+        float: right;
+        width: 55%;
+    }
+
+    @media only screen and (min-width: 1200px) {
+        display: inline-block;
+        float: right;
+        width: 50%;
+    }
+
+    @media only screen and (min-width: 1500px) {
+        display: inline-block;
+        float: right;
+        width: 53%;
+    }
 `
 
 const Imgright = styled.img `
-    float: right;
-    display: inline-block;
-    width: 400px;
-    margin: 0 0 3% 0;
+    width: 280px;
+    display: block;
+    margin: 10% auto 3% auto;
+
+    @media only screen and (min-width: 500px) {
+        width: 350px;
+    }
+
+    @media only screen and (min-width: 1000px) {
+        float: right;
+        display: inline-block;
+        width: 350px;
+        margin: 0 0 0 1%;
+    }
+
+    @media only screen and (min-width: 1500px) {
+        float: right;
+        display: inline-block;
+        width: 400px;
+        margin: 0 0 0 1%;
+    }
 `
 
 const Contentleft = styled.span`
-    display: inline-block;
-    width: 50%;
+    width: 100%;
     float: left;
+
+    @media only screen and (min-width: 1000px) {
+        display: inline-block;
+        float: left;
+        width: 55%;
+    }
+
+    @media only screen and (min-width: 1200px) {
+        display: inline-block;
+        float: left;
+        width: 50%;
+    }
+
+    @media only screen and (min-width: 1500px) {
+        display: inline-block;
+        float: left;
+        width: 53%;
+    }
+`
+
+const Buttongroup = styled.div `
+    text-align: center;
+`
+
+const Button = styled.p `
+    background-color: #323232; 
+    border: none;
+    color: inherit;
+    padding: 0 5%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: inherit;
+    margin: 3%;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 1px 1px #222222,
+                2px 2px #222222;
+`
+
+const Projecttitle = styled.h3 `
+    font-size: 20pt;
 `
 
 export const Projects = () => {
     return (
         <Container>
-            <Title>Projects <hr /></Title>  
+            <Title>Projects</Title>  
+            <hr />
             <Project>
                 <Imgleft src={v1} />
                 <Contentright>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut molestie, nunc non sollicitudin semper, tellus nulla sollicitudin velit, vitae euismod mauris sapien vel erat. Integer varius lorem sapien, convallis tempor mi faucibus nec. Donec maximus maximus purus. Etiam bibendum ante vel leo semper, non varius massa iaculis. Sed pellentesque volutpat dignissim. Cras lacus augue, placerat ac maximus facilisis, convallis sit amet nisi. Nullam at ante accumsan nisl dictum maximus. Praesent maximus rutrum tincidunt. Maecenas viverra ullamcorper leo tincidunt tempor. Nulla id mi id justo eleifend auctor.</p>
+                    <Projecttitle>
+                        Portfolio v3.0
+                        <a href="#" className="projectlink" ><FaGithub /></a>
+                        <a href="#" className="projectlink" ><FaExternalLinkAlt /></a>
+                        
+                    </Projecttitle>
+                    <p>Original portfolio webpage, designed and coded from scratch.</p>
+                    <Buttongroup>
+                        <Button>HTML</Button>
+                        <Button>HTML</Button>
+                        <Button>HTML</Button>
+                        <Button>HTML</Button>
+                    </Buttongroup>
                 </Contentright>
             </Project>
             <Project>
                 <Imgright src={v1} />
                 <Contentleft>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut molestie, nunc non sollicitudin semper, tellus nulla sollicitudin velit, vitae euismod mauris sapien vel erat. Integer varius lorem sapien, convallis tempor mi faucibus nec. Donec maximus maximus purus. Etiam bibendum ante vel leo semper, non varius massa iaculis. Sed pellentesque volutpat dignissim. Cras lacus augue, placerat ac maximus facilisis, convallis sit amet nisi. Nullam at ante accumsan nisl dictum maximus. Praesent maximus rutrum tincidunt. Maecenas viverra ullamcorper leo tincidunt tempor. Nulla id mi id justo eleifend auctor.</p>
+                <Projecttitle>
+                        Portfolio v3.0
+                        <a href="#" className="projectlink" ><FaGithub /></a>
+                        <a href="#" className="projectlink" ><FaExternalLinkAlt /></a>
+                        
+                    </Projecttitle>
+                    <p>Original portfolio webpage, designed and coded from scratch.</p>
+                    <Buttongroup>
+                        <Button>HTML</Button>
+                        <Button>HTML</Button>
+                        <Button>HTML</Button>
+                        <Button>HTML</Button>
+                    </Buttongroup>
                 </Contentleft>
             </Project>
         </Container>

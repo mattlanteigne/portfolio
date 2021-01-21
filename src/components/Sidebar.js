@@ -71,18 +71,12 @@ export const Sidebar = () => {
         <Container>
             <Logo src = {logo} />
             <Socials>
-                <Social><a href="#"><FaFile /></a></Social>
-                <Social><a href="#"><FaLinkedin /></a></Social>
-                <Social><a href="#"><FaGithub /></a></Social>
-                <Social><a href="#"><FaEnvelope /></a></Social>
+                <Social><a href="#"><FaFile color="#ffffff" /></a></Social>
+                <Social><a href="#"><FaLinkedin color="#0a66c2" /></a></Social>
+                <Social><a href="#"><FaGithub color="#5c6bc0" /></a></Social>
+                <Social><a href="#"><FaEnvelope color="#ea4435" /></a></Social>
             </Socials>
         </Container>
     );
 }
 export default Sidebar;
-
-
-
-
-
-
