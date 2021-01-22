@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+import Fade from 'react-reveal/Zoom';
+
 
 const Container = styled.div `
     width: 90%;
@@ -13,8 +15,6 @@ const Container = styled.div `
         margin: 10%;
     }    
     @media only screen and (min-width: 1500px) {
-        width: 60%;
-        float: right;
         margin: 5%;
     }
 `
@@ -48,6 +48,7 @@ const Button = styled.button `
 export const Contact = () => {
     return (
         <Container>
+            <Fade top>
             <Title>Contact</Title>
             <hr />
             <h2>Thank you.</h2>
@@ -57,6 +58,7 @@ export const Contact = () => {
                 <Button>Linkedin</Button>
                 <Button>Linkedin</Button>
             </Buttongroup>
+            </Fade>
         </Container>
     );
 }

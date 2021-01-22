@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+import Fade from 'react-reveal/Zoom';
+
 import v1 from '../assets/v1.png';
 
 import { FaGithub } from "react-icons/fa";
@@ -19,8 +21,6 @@ const Container = styled.div `
     }   
      
     @media only screen and (min-width: 1500px) {
-        width: 60%;
-        float: right;
         margin: 5%;
     }
 `
@@ -28,6 +28,7 @@ const Container = styled.div `
 const Title = styled.h1 `
     
 `
+
 const Project = styled.div `
     width: 100%;
     float: left;
@@ -38,6 +39,9 @@ const Imgleft = styled.img `
     width: 280px;
     display: block;
     margin: 10% auto 3% auto;
+    border: 1px solid #ededed;
+    box-shadow: 2px 2px #222222,
+                3px 3px #222222;
 
     @media only screen and (min-width: 500px) {
         width: 350px;
@@ -85,6 +89,9 @@ const Imgright = styled.img `
     width: 280px;
     display: block;
     margin: 10% auto 3% auto;
+    border: 1px solid #ededed;
+    box-shadow: 2px 2px #222222,
+                3px 3px #222222;
 
     @media only screen and (min-width: 500px) {
         width: 350px;
@@ -142,7 +149,6 @@ const Button = styled.p `
     display: inline-block;
     font-size: inherit;
     margin: 3%;
-    cursor: pointer;
     border-radius: 5px;
     box-shadow: 1px 1px #222222,
                 2px 2px #222222;
@@ -155,8 +161,11 @@ const Projecttitle = styled.h3 `
 export const Projects = () => {
     return (
         <Container>
+            <Fade top>
             <Title>Projects</Title>  
             <hr />
+            </Fade>
+            <Fade top>
             <Project>
                 <Imgleft src={v1} />
                 <Contentright>
@@ -175,6 +184,8 @@ export const Projects = () => {
                     </Buttongroup>
                 </Contentright>
             </Project>
+            </Fade>
+            <Fade top>
             <Project>
                 <Imgright src={v1} />
                 <Contentleft>
@@ -193,6 +204,7 @@ export const Projects = () => {
                     </Buttongroup>
                 </Contentleft>
             </Project>
+            </Fade>
         </Container>
     );
 }

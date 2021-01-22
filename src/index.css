@@ -16,7 +16,7 @@ a {
 }
 
 hr {
-  border: 1px solid #E5E5E5;
+  border: 1px solid #4a167a
 }
 
 .navbar {
@@ -64,12 +64,12 @@ hr {
 }
 
 .projectlink {
-  color: red;
+  color: #4a167a;
   margin-left: 2%;
   font-size: 16pt;
   display: inline-block;
 }
 
 .projectlink:hover {
-  color: yellow;
+  color: #8b1bf5
 }

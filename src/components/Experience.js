@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+import Fade from 'react-reveal/Zoom';
+
 const Container = styled.div `
     width: 90%;
     margin: 25% auto;
@@ -12,8 +14,6 @@ const Container = styled.div `
     }    
     
     @media only screen and (min-width: 1500px) {
-        width: 60%;
-        float: right;
         margin: 5%;
     }
 `
@@ -41,7 +41,9 @@ const Duties = styled.ul`
 
 export const Experience = () => {
     return (
+        
         <Container>
+            <Fade top>
             <Title>Experience</Title>
             <hr />
             <Job>
@@ -71,6 +73,7 @@ export const Experience = () => {
                     </ul>
                 </Duties>
             </Job>
+            </Fade>
         </Container>
     );
 }
