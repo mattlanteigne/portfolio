@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
-import Fade from 'react-reveal/Zoom';
-
+import Flip from 'react-reveal/Flip';
 
 const Container = styled.div `
     width: 90%;
@@ -48,17 +47,17 @@ const Button = styled.button `
 export const Contact = () => {
     return (
         <Container>
-            <Fade top>
-            <Title>Contact</Title>
-            <hr />
-            <h2>Thank you.</h2>
-            <p>Thank you for visiting my portfolio. If you are interested in a chat please contact me below.</p>
-            <Buttongroup>
-                <Button>Linkedin</Button>
-                <Button>Linkedin</Button>
-                <Button>Linkedin</Button>
-            </Buttongroup>
-            </Fade>
+            <Flip left>
+                <Title>Contact</Title>
+                <hr />
+                <h2>Thank you.</h2>
+                <p>Thank you for visiting my portfolio. If you are interested in a chat please contact me below.</p>
+                <Buttongroup>
+                    <Button>Linkedin</Button>
+                    <Button>Linkedin</Button>
+                    <Button>Linkedin</Button>
+                </Buttongroup>
+            </Flip>
         </Container>
     );
 }

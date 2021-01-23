@@ -4,8 +4,6 @@ import Navbar from 'react-bootstrap/Navbar';
 import { Sling as Hamburger } from 'hamburger-react'
 
 
-
-
 export const Navigation = () => {
     return (
       <Navbar expand="lg">

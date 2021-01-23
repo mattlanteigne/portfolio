@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import Fade from 'react-reveal/Zoom';
+import Fade from 'react-reveal/Fade';
 
 import v1 from '../assets/v1.png';
 
@@ -161,49 +161,69 @@ const Projecttitle = styled.h3 `
 export const Projects = () => {
     return (
         <Container>
-            <Fade top>
-            <Title>Projects</Title>  
-            <hr />
+            <Fade right>
+                <Title>Projects</Title>  
+                <hr />
+                <Project>
+                    <Imgleft src={v1} />
+                    <Contentright>
+                        <Projecttitle>
+                            Portfolio v3.0
+                            <a href="#" className="projectlink" ><FaGithub /></a>
+                            <a href="#" className="projectlink" ><FaExternalLinkAlt /></a>
+
+                        </Projecttitle>
+                        <p>Original portfolio webpage, designed and coded from scratch.</p>
+                        <Buttongroup>
+                            <Button>HTML</Button>
+                            <Button>HTML</Button>
+                            <Button>HTML</Button>
+                            <Button>HTML</Button>
+                        </Buttongroup>
+                    </Contentright>
+                </Project>
             </Fade>
-            <Fade top>
-            <Project>
-                <Imgleft src={v1} />
-                <Contentright>
+
+            <Fade left>
+                <Project>
+                    <Imgright src={v1} />
+                    <Contentleft>
                     <Projecttitle>
-                        Portfolio v3.0
-                        <a href="#" className="projectlink" ><FaGithub /></a>
-                        <a href="#" className="projectlink" ><FaExternalLinkAlt /></a>
-                        
-                    </Projecttitle>
-                    <p>Original portfolio webpage, designed and coded from scratch.</p>
-                    <Buttongroup>
-                        <Button>HTML</Button>
-                        <Button>HTML</Button>
-                        <Button>HTML</Button>
-                        <Button>HTML</Button>
-                    </Buttongroup>
-                </Contentright>
-            </Project>
+                            Portfolio v3.0
+                            <a href="#" className="projectlink" ><FaGithub /></a>
+                            <a href="#" className="projectlink" ><FaExternalLinkAlt /></a>
+
+                        </Projecttitle>
+                        <p>Original portfolio webpage, designed and coded from scratch.</p>
+                        <Buttongroup>
+                            <Button>HTML</Button>
+                            <Button>HTML</Button>
+                            <Button>HTML</Button>
+                            <Button>HTML</Button>
+                        </Buttongroup>
+                    </Contentleft>
+                </Project>
             </Fade>
-            <Fade top>
-            <Project>
-                <Imgright src={v1} />
-                <Contentleft>
-                <Projecttitle>
-                        Portfolio v3.0
-                        <a href="#" className="projectlink" ><FaGithub /></a>
-                        <a href="#" className="projectlink" ><FaExternalLinkAlt /></a>
-                        
-                    </Projecttitle>
-                    <p>Original portfolio webpage, designed and coded from scratch.</p>
-                    <Buttongroup>
-                        <Button>HTML</Button>
-                        <Button>HTML</Button>
-                        <Button>HTML</Button>
-                        <Button>HTML</Button>
-                    </Buttongroup>
-                </Contentleft>
-            </Project>
+
+            <Fade right>
+                <Project>
+                    <Imgleft src={v1} />
+                    <Contentright>
+                        <Projecttitle>
+                            Portfolio v3.0
+                            <a href="#" className="projectlink" ><FaGithub /></a>
+                            <a href="#" className="projectlink" ><FaExternalLinkAlt /></a>
+                            
+                        </Projecttitle>
+                        <p>Original portfolio webpage, designed and coded from scratch.</p>
+                        <Buttongroup>
+                            <Button>HTML</Button>
+                            <Button>HTML</Button>
+                            <Button>HTML</Button>
+                            <Button>HTML</Button>
+                        </Buttongroup>
+                    </Contentright>
+                </Project>
             </Fade>
         </Container>
     );

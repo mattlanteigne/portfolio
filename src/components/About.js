@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 import portrait from '../assets/portrait.jpg';
 
-import Fade from 'react-reveal/Zoom';
+import Lightspeed from 'react-reveal/LightSpeed';
 
 const Container = styled.div `
     width: 90%;
@@ -35,7 +35,7 @@ const Content = styled.span`
 const Portrait = styled.img `
     width: 80%;
     display: block;
-    margin: 10% auto 0 auto;
+    margin: 10% auto;
 
     @media only screen and (min-width: 550px) {
         width: 50%;
@@ -45,21 +45,22 @@ const Portrait = styled.img `
         float: right;
         display: inline-block;
         width: 30%;
-        margin: 0 3% 0 0;
+        margin-top: 0;
+        margin-right: 3%;
     }
 `
 
 export const About = () => {
     return (
         <Container>
-            <Fade top>
-            <Title>About</Title>
-            <hr />
-            <Content>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut molestie, nunc non sollicitudin semper, tellus nulla sollicitudin velit, vitae euismod mauris sapien vel erat. Integer varius lorem sapien, convallis tempor mi faucibus nec. Donec maximus maximus purus. Etiam bibendum ante vel leo semper, non varius massa iaculis. Sed pellentesque volutpat dignissim. Cras lacus augue, placerat ac maximus facilisis, convallis sit amet nisi. Nullam at ante accumsan nisl dictum maximus. Praesent maximus rutrum tincidunt. Maecenas viverra ullamcorper leo tincidunt tempor. Nulla id mi id justo eleifend auctor.</p>
-            </Content>
-            <Portrait src= {portrait} />
-            </Fade>
+            <Lightspeed right>
+                <Title>About</Title>
+                <hr />
+                <Content>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut molestie, nunc non sollicitudin semper, tellus nulla sollicitudin velit, vitae euismod mauris sapien vel erat. Integer varius lorem sapien, convallis tempor mi faucibus nec. Donec maximus maximus purus. Etiam bibendum ante vel leo semper, non varius massa iaculis. Sed pellentesque volutpat dignissim. Cras lacus augue, placerat ac maximus facilisis, convallis sit amet nisi. Nullam at ante accumsan nisl dictum maximus. Praesent maximus rutrum tincidunt. Maecenas viverra ullamcorper leo tincidunt tempor. Nulla id mi id justo eleifend auctor.</p>
+                </Content>
+                <Portrait src= {portrait} />
+            </Lightspeed>
         </Container>
     );
 }

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import Fade from 'react-reveal/Zoom';
+import Bounce from 'react-reveal/Bounce';
 
 const Container = styled.div `
     width: 90%;
@@ -43,37 +43,39 @@ export const Experience = () => {
     return (
         
         <Container>
-            <Fade top>
-            <Title>Experience</Title>
-            <hr />
-            <Job>
-                <Jobtitle>Keyholder // The Beer Store</Jobtitle>
-                <Date>May 2017 to present.</Date>
-                <Duties>
-                    <ul>
-                        <li>Test</li>
-                    </ul>
-                </Duties>
-            </Job>
-            <Job>
-                <Jobtitle>Keyholder // The Beer Store</Jobtitle>
-                <Date>May 2017 to present.</Date>
-                <Duties>
-                    <ul>
-                        <li>Test</li>
-                    </ul>
-                </Duties>
-            </Job>
-            <Job>
-                <Jobtitle>Keyholder // The Beer Store</Jobtitle>
-                <Date>May 2017 to present.</Date>
-                <Duties>
-                    <ul>
-                        <li>Test</li>
-                    </ul>
-                </Duties>
-            </Job>
-            </Fade>
+            <Bounce left>
+                <Title>Experience</Title>
+                <hr />
+            </Bounce>
+            <Bounce right>
+                <Job>
+                    <Jobtitle>Keyholder // The Beer Store</Jobtitle>
+                    <Date>May 2017 to present.</Date>
+                    <Duties>
+                        <ul>
+                            <li>Test</li>
+                        </ul>
+                    </Duties>
+                </Job>
+                <Job>
+                    <Jobtitle>Keyholder // The Beer Store</Jobtitle>
+                    <Date>May 2017 to present.</Date>
+                    <Duties>
+                        <ul>
+                            <li>Test</li>
+                        </ul>
+                    </Duties>
+                </Job>
+                <Job>
+                    <Jobtitle>Keyholder // The Beer Store</Jobtitle>
+                    <Date>May 2017 to present.</Date>
+                    <Duties>
+                        <ul>
+                            <li>Test</li>
+                        </ul>
+                    </Duties>
+                </Job>
+            </Bounce>
         </Container>
     );
 }
