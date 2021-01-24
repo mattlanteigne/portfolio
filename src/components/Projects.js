@@ -2,11 +2,13 @@ import styled from 'styled-components';
 
 import Fade from 'react-reveal/Fade';
 
+import todo from '../assets/todo.png';
+import ifa from '../assets/ifa.png';
 import v1 from '../assets/v1.png';
+import phrase from '../assets/phrase.png';
 
 import { FaGithub } from "react-icons/fa";
 import { FaExternalLinkAlt } from "react-icons/fa";
-
 
 
 const Container = styled.div `
@@ -165,20 +167,18 @@ export const Projects = () => {
                 <Title id="projects">Projects</Title>  
                 <hr />
                 <Project>
-                    <Imgleft src={v1} />
+                    <Imgleft src={todo} />
                     <Contentright>
                         <Projecttitle>
-                            Portfolio v3.0
-                            <a href="#" className="projectlink" ><FaGithub /></a>
+                            Todo
                             <a href="#" className="projectlink" ><FaExternalLinkAlt /></a>
+                            <a href="#" className="projectlink" ><FaGithub /></a>
 
                         </Projecttitle>
-                        <p>Original portfolio webpage, designed and coded from scratch.</p>
+                        <p>A todo list with the ability to add todo items, complete todo items and remove todo items as needed. This application was created using React.</p>
                         <Buttongroup>
-                            <Button>HTML</Button>
-                            <Button>HTML</Button>
-                            <Button>HTML</Button>
-                            <Button>HTML</Button>
+                            <Button>JavaScript</Button>
+                            <Button>React</Button>
                         </Buttongroup>
                     </Contentright>
                 </Project>
@@ -186,20 +186,17 @@ export const Projects = () => {
 
             <Fade left>
                 <Project>
-                    <Imgright src={v1} />
+                    <Imgright src={ifa} />
                     <Contentleft>
                     <Projecttitle>
-                            Portfolio v3.0
-                            <a href="#" className="projectlink" ><FaGithub /></a>
-                            <a href="#" className="projectlink" ><FaExternalLinkAlt /></a>
+                            Project Gallery
 
                         </Projecttitle>
-                        <p>Original portfolio webpage, designed and coded from scratch.</p>
+                        <p>A Project Gallery created for the INDIGItal program for the Indigenous Friends website. The web application was designed and prototyped using Figma, and developed using Dart and Flutter.</p>
+                        <p>Live preview coming soon.</p>
                         <Buttongroup>
-                            <Button>HTML</Button>
-                            <Button>HTML</Button>
-                            <Button>HTML</Button>
-                            <Button>HTML</Button>
+                            <Button>Dart</Button>
+                            <Button>Flutter</Button>
                         </Buttongroup>
                     </Contentleft>
                 </Project>
@@ -210,21 +207,48 @@ export const Projects = () => {
                     <Imgleft src={v1} />
                     <Contentright>
                         <Projecttitle>
-                            Portfolio v3.0
-                            <a href="#" className="projectlink" ><FaGithub /></a>
+                            Portfolio v2.0
                             <a href="#" className="projectlink" ><FaExternalLinkAlt /></a>
+                            <a href="#" className="projectlink" ><FaGithub /></a>
                             
                         </Projecttitle>
-                        <p>Original portfolio webpage, designed and coded from scratch.</p>
+                        <p>The second version of my personal portfolio.</p>
                         <Buttongroup>
                             <Button>HTML</Button>
-                            <Button>HTML</Button>
-                            <Button>HTML</Button>
-                            <Button>HTML</Button>
+                            <Button>CSS</Button>
+                            <Button>JavaScript</Button>
+                            <Button>Bootstrap</Button>
                         </Buttongroup>
                     </Contentright>
                 </Project>
             </Fade>
+
+            <Fade left>
+                <Project>
+                    <Imgright src={phrase} />
+                    <Contentleft>
+                    <Projecttitle>
+                            Phrase Parse
+                            <a href="#" className="projectlink" ><FaExternalLinkAlt /></a>
+                            <a href="#" className="projectlink" ><FaGithub /></a>
+
+                        </Projecttitle>
+                        <p>A phase parse web application created for a York University assignment. This application takes an input phrase and separates the words based on three word types:</p>
+                        <ol>
+                            <li>A word starting with 3 alphabetic characters</li>
+                            <li>A Word starting with 3 numeric digits</li>
+                            <li>Undefined word type (word is not of type 1 or 2)</li>
+                        </ol>
+                        <Buttongroup>
+                            <Button>HTML</Button>
+                            <Button>CSS</Button>
+                            <Button>PHP</Button>
+                            <Button>JavaScript</Button>
+                        </Buttongroup>
+                    </Contentleft>
+                </Project>
+            </Fade>
+        
         </Container>
     );
 }

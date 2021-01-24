@@ -1,8 +1,11 @@
+@font-face {
+  font-family: 'Monoid';
+  src: url(fonts/Monoid-Regular.ttf) format('truetype');
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Arial';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #1D1D1D;
@@ -36,7 +39,7 @@ hr {
       border-radius: 0 0 5px 5px;
       box-shadow: 0px 3px 4px #222222,
       0px 6px 5px #222222;
-      padding: 15px;
+      padding: 5px;
   }
 }
 
@@ -58,6 +61,10 @@ hr {
   text-decoration: none;
 }
 
+.hello {
+  font-family: 'Monoid';
+}
+
 .projectlink {
   margin-left: 2%;
   font-size: 12pt;
@@ -72,4 +79,8 @@ hr {
 
 .projectlink:hover {
   color: #8b1bf5
+}
+
+.tech {
+  margin: 2%;
 }

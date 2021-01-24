@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 import Flip from 'react-reveal/Flip';
 
+
 const Container = styled.div `
     width: 90%;
     margin: 25% auto;
@@ -41,8 +42,6 @@ const Button = styled.button `
     box-shadow: 1px 1px #222222,
                 2px 2px #222222;
 `
-
-
 
 export const Contact = () => {
     return (

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
-
 import Typewriter from 'typewriter-effect';
+
 
 const Container = styled.div `
     width: 90%;
@@ -34,7 +34,7 @@ const Hello = styled.h1 `
 export const Main = () => {
     return (
         <Container>
-            <Hello id="main">
+            <Hello id="main" className="hello">
                 <Typewriter onInit={(typewriter) => {
                     typewriter.typeString('Hello there!')
                     .pauseFor(1500)

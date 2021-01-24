@@ -2,10 +2,11 @@ import styled from 'styled-components';
 
 import logo from '../assets/logo.png';
 
-import { FaFile } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
-import { FaEnvelope } from "react-icons/fa";
+import { FaFile } from 'react-icons/fa';
+import { FaLinkedin } from 'react-icons/fa';
+import { FaGithub } from 'react-icons/fa';
+import { FaEnvelope } from 'react-icons/fa';
+
 
 const Container = styled.div `
     margin: 0 5%;
