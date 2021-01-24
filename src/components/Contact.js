@@ -19,7 +19,7 @@ const Container = styled.div `
 `
 
 const Title = styled.h1 `
-    text-align: right;
+    text-align: left;
 `
 
 const Buttongroup = styled.div `
@@ -48,14 +48,14 @@ export const Contact = () => {
     return (
         <Container>
             <Flip left>
-                <Title>Contact</Title>
+                <Title id="contact">Contact</Title>
                 <hr />
                 <h2>Thank you.</h2>
                 <p>Thank you for visiting my portfolio. If you are interested in a chat please contact me below.</p>
                 <Buttongroup>
+                    <Button>Email</Button>
                     <Button>Linkedin</Button>
-                    <Button>Linkedin</Button>
-                    <Button>Linkedin</Button>
+                    <Button>GitHub</Button>
                 </Buttongroup>
             </Flip>
         </Container>

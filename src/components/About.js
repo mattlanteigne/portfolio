@@ -50,14 +50,42 @@ const Portrait = styled.img `
     }
 `
 
+const Buttongroup = styled.div `
+    text-align: center;
+`
+
+const Button = styled.p `
+    background-color: #323232; 
+    border: none;
+    color: inherit;
+    padding: 0 5%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: inherit;
+    margin: 3%;
+    border-radius: 5px;
+    box-shadow: 1px 1px #222222,
+                2px 2px #222222;
+`
+
 export const About = () => {
     return (
         <Container>
             <Lightspeed right>
-                <Title>About</Title>
+                <Title id="about">About</Title>
                 <hr />
                 <Content>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut molestie, nunc non sollicitudin semper, tellus nulla sollicitudin velit, vitae euismod mauris sapien vel erat. Integer varius lorem sapien, convallis tempor mi faucibus nec. Donec maximus maximus purus. Etiam bibendum ante vel leo semper, non varius massa iaculis. Sed pellentesque volutpat dignissim. Cras lacus augue, placerat ac maximus facilisis, convallis sit amet nisi. Nullam at ante accumsan nisl dictum maximus. Praesent maximus rutrum tincidunt. Maecenas viverra ullamcorper leo tincidunt tempor. Nulla id mi id justo eleifend auctor.</p>
+                    <p>Hi there! My name is Matthew Lanteigne and I'm a technology enthusiast.</p>
+                    <p>My passion is building applications for the web.</p>
+                    <Buttongroup>
+                        <Button>HTML</Button>
+                        <Button>CSS</Button>
+                        <Button>JavaScript</Button>
+                        <Button>Dart</Button>
+                        <Button>Java</Button>
+                        <Button>PHP</Button>
+                    </Buttongroup>
                 </Content>
                 <Portrait src= {portrait} />
             </Lightspeed>

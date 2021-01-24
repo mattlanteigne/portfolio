@@ -1,7 +1,10 @@
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
-import { Sling as Hamburger } from 'hamburger-react'
+import { Sling as Hamburger } from 'hamburger-react';
+
+import { Link, animateScroll as scroll } from "react-scroll";
+ 
 
 
 export const Navigation = () => {
@@ -20,11 +23,15 @@ export const Navigation = () => {
 
       <Navbar.Collapse bg="dark" className="text-right">
         <Nav className="ml-auto">
-          <Nav.Link href="#home" bsPrefix="link">Home</Nav.Link>
-          <Nav.Link href="#about" bsPrefix="link">About</Nav.Link>
-          <Nav.Link href="#experience" bsPrefix="link">Experience</Nav.Link>
-          <Nav.Link href="#projects" bsPrefix="link">Projects</Nav.Link>
-          <Nav.Link href="#contact" bsPrefix="link">Contact</Nav.Link>
+        <Nav.Link bsPrefix="link">
+            <Link to="about" smooth={true} offset={-50} duration={500}>About</Link>
+          </Nav.Link>
+          <Nav.Link bsPrefix="link">
+            <Link to="projects" smooth={true} offset={-50} duration={500}>Projects</Link>
+          </Nav.Link>
+        <Nav.Link bsPrefix="link">
+            <Link to="contact" smooth={true} duration={500}>Contact</Link>
+          </Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>

@@ -31,7 +31,7 @@ const Title = styled.h1 `
 
 const Project = styled.div `
     width: 100%;
-    float: left;
+    display: inline-block;
     margin-bottom: 100px;
 `
 
@@ -162,7 +162,7 @@ export const Projects = () => {
     return (
         <Container>
             <Fade right>
-                <Title>Projects</Title>  
+                <Title id="projects">Projects</Title>  
                 <hr />
                 <Project>
                     <Imgleft src={v1} />

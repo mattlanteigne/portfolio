@@ -34,7 +34,7 @@ const Hello = styled.h1 `
 export const Main = () => {
     return (
         <Container>
-            <Hello>
+            <Hello id="main">
                 <Typewriter onInit={(typewriter) => {
                     typewriter.typeString('Hello there!')
                     .pauseFor(1500)
