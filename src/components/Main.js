@@ -28,7 +28,10 @@ const Container = styled.div `
     }
 `
 const Hello = styled.h1 `
-    font-size: 50pt;
+    font-size: 28pt;
+    @media only screen and (min-width: 600px) {
+        font-size: 50pt;
+    }
 `
 
 export const Main = () => {
