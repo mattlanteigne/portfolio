@@ -58,7 +58,7 @@ const Portrait = styled.img `
 
     @media only screen and (min-width: 1000px) {
         float: right;
-        display: inline-block;
+        display: block;
         width: 30%;
         margin-top: 0;
         margin-right: 3%;
@@ -69,8 +69,12 @@ const Technologies = styled.div `
     width: 100%;
     float: left;
     text-align: center;
-    margin-bottom: 10%;
+    margin-bottom: 200px;
     font-size: 40pt;
+
+    @media only screen and (min-width: 1200px) {
+        margin-bottom: 10%;
+    }
 `
 
 export const About = () => {

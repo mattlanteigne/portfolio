@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 import logo from '../assets/logo.png';
 
-import { FaFile } from 'react-icons/fa';
+import { ImProfile } from 'react-icons/im';
 import { FaLinkedin } from 'react-icons/fa';
 import { FaGithub } from 'react-icons/fa';
 import { FaEnvelope } from 'react-icons/fa';
@@ -36,6 +36,9 @@ const Logo = styled.img `
 
     @media only screen and (min-width: 1200px) {
         width: 300px;
+        margin: auto;
+    }
+    @media only screen and (min-width: 1500px) {
         margin: 25px auto;
     }
 `
@@ -61,8 +64,12 @@ const Social = styled.div `
 
     @media only screen and (min-width: 1200px) {
         vertical-align: middle;
-        margin: 25px auto;
+        margin: 5px auto;
         display: block;
+    }
+
+    @media only screen and (min-width: 1500px) {
+        margin: 25px auto;
     }
 `
 
@@ -72,7 +79,7 @@ export const Sidebar = () => {
         <Container>
             <Logo src = {logo} />
             <Socials>
-                <Social><a href="https://www.matthewlanteigne.com/pdf/matthewlanteigne.pdf" target="_blank"><FaFile color="#ffffff" /></a></Social>
+                <Social><a href="https://www.matthewlanteigne.com/pdf/matthewlanteigne.pdf" target="_blank"><ImProfile color="#ffffff" /></a></Social>
                 <Social><a href="https://www.linkedin.com/in/matthewlanteigne/" target="_blank"><FaLinkedin color="#0a66c2" /></a></Social>
                 <Social><a href="https://github.com/mattlanteigne" target="_blank"><FaGithub color="#5c6bc0" /></a></Social>
                 <Social><a href="mailto:contact@matthewlanteigne.com"><FaEnvelope color="#ea4435" /></a></Social>
