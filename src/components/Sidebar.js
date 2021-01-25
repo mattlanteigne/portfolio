@@ -72,10 +72,10 @@ export const Sidebar = () => {
         <Container>
             <Logo src = {logo} />
             <Socials>
-                <Social><a href="#"><FaFile color="#ffffff" /></a></Social>
-                <Social><a href="#"><FaLinkedin color="#0a66c2" /></a></Social>
-                <Social><a href="#"><FaGithub color="#5c6bc0" /></a></Social>
-                <Social><a href="#"><FaEnvelope color="#ea4435" /></a></Social>
+                <Social><a href="https://www.matthewlanteigne.com/pdf/matthewlanteigne.pdf" target="_blank"><FaFile color="#ffffff" /></a></Social>
+                <Social><a href="https://www.linkedin.com/in/matthewlanteigne/" target="_blank"><FaLinkedin color="#0a66c2" /></a></Social>
+                <Social><a href="https://github.com/mattlanteigne" target="_blank"><FaGithub color="#5c6bc0" /></a></Social>
+                <Social><a href="mailto:contact@matthewlanteigne.com"><FaEnvelope color="#ea4435" /></a></Social>
             </Socials>
         </Container>
     );

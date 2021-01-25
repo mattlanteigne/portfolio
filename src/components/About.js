@@ -65,24 +65,6 @@ const Portrait = styled.img `
     }
 `
 
-const Buttongroup = styled.div `
-    text-align: center;
-`
-
-const Button = styled.p `
-    background-color: #323232; 
-    border: none;
-    color: inherit;
-    padding: 0 5%;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: inherit;
-    margin: 3%;
-    border-radius: 5px;
-    box-shadow: 1px 1px #222222,
-                2px 2px #222222;
-`
 const Technologies = styled.div `
     width: 100%;
     float: left;
@@ -98,9 +80,8 @@ export const About = () => {
                 <Title id="about">About</Title>
                 <hr />
                 <Content>
-                    <p>Hi there! My name is Matthew Lanteigne and I am a software developer.</p>
+                    <p>Hi there! My name is Matthew Lanteigne and I am a developer based in Toronto, Canada. I am a motivated individual who is always looking for new technologies to learn and challenges to overcome.</p>
                     <p>I love building all types of applications, especially for the web. I have worked with a variety of different technologies, with one of my favorites being React.</p>
-                    <p>This portfolio will showcase some of my creations I have completed throughout my time developing. I hope to continue to build beautiful applications to add to my collection.</p>
                 </Content>
                 <Portrait src= {portrait} />
             </Lightspeed>

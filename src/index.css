@@ -5,7 +5,7 @@
 
 body {
   margin: 0;
-  font-family: 'Arial';
+  font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #1D1D1D;
@@ -18,8 +18,13 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
 hr {
-  border: 1px solid #4a167a
+  border: 1px solid #8b1bf5;
 }
 
 .navbar {
@@ -71,16 +76,20 @@ hr {
 }
 
 .projectlink {
-  color: #4a167a;
+  color: #8b1bf5;
   margin-left: 2%;
   font-size: 16pt;
   display: inline-block;
 }
 
 .projectlink:hover {
-  color: #8b1bf5
+  color: #4a167a;
 }
 
 .tech {
   margin: 2%;
+}
+
+.tech:hover {
+  color: #8b1bf5;
 }

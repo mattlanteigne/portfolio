@@ -12,7 +12,9 @@ const Content = styled.p `
 const Footer = () => {
     return(
         <Container>
-            <Content>Designed and coded by Matthew Lanteigne, 2021.</Content>
+            <Content>
+                <a href="https://github.com/mattlanteigne/portfolio" target="_blank">Designed and coded by Matthew Lanteigne, 2021.</a>
+            </Content>
         </Container>
     );
 }

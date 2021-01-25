@@ -150,7 +150,7 @@ const Button = styled.p `
     text-decoration: none;
     display: inline-block;
     font-size: inherit;
-    margin: 3%;
+    margin: 1%;
     border-radius: 5px;
     box-shadow: 1px 1px #222222,
                 2px 2px #222222;
@@ -171,8 +171,8 @@ export const Projects = () => {
                     <Contentright>
                         <Projecttitle>
                             Todo
-                            <a href="#" className="projectlink" ><FaExternalLinkAlt /></a>
-                            <a href="#" className="projectlink" ><FaGithub /></a>
+                            <a href="https://mattlanteigne.github.io/todo/" target="_blank" className="projectlink" ><FaExternalLinkAlt /></a>
+                            <a href="https://github.com/mattlanteigne/todo" target="_blank" className="projectlink" ><FaGithub /></a>
 
                         </Projecttitle>
                         <p>A todo list with the ability to add todo items, complete todo items and remove todo items as needed. This application was created using React.</p>
@@ -188,11 +188,10 @@ export const Projects = () => {
                 <Project>
                     <Imgright src={ifa} />
                     <Contentleft>
-                    <Projecttitle>
+                        <Projecttitle>
                             Project Gallery
-
                         </Projecttitle>
-                        <p>A Project Gallery created for the INDIGItal program for the Indigenous Friends website. The web application was designed and prototyped using Figma, and developed using Dart and Flutter.</p>
+                        <p>A Project Gallery created for the INDIGItal program for the Indigenous Friends website. The web application was designed and prototyped using Figma and developed using Flutter.</p>
                         <p>Live preview coming soon.</p>
                         <Buttongroup>
                             <Button>Dart</Button>
@@ -208,11 +207,9 @@ export const Projects = () => {
                     <Contentright>
                         <Projecttitle>
                             Portfolio v2.0
-                            <a href="#" className="projectlink" ><FaExternalLinkAlt /></a>
-                            <a href="#" className="projectlink" ><FaGithub /></a>
-                            
+                            <a href="https://www.matthewlanteigne.com/v2/" target="_blank" className="projectlink" ><FaExternalLinkAlt /></a>   
                         </Projecttitle>
-                        <p>The second version of my personal portfolio.</p>
+                        <p>The second and previous version of my personal portfolio. This project was coded using basic HTML, CSS and JavaScript, with some help from Bootstrap.</p>
                         <Buttongroup>
                             <Button>HTML</Button>
                             <Button>CSS</Button>
@@ -227,18 +224,11 @@ export const Projects = () => {
                 <Project>
                     <Imgright src={phrase} />
                     <Contentleft>
-                    <Projecttitle>
+                        <Projecttitle>
                             Phrase Parse
-                            <a href="#" className="projectlink" ><FaExternalLinkAlt /></a>
-                            <a href="#" className="projectlink" ><FaGithub /></a>
-
+                            <a href="https://www.matthewlanteigne.com/phrase/" target="_blank" className="projectlink" ><FaExternalLinkAlt /></a>
                         </Projecttitle>
-                        <p>A phase parse web application created for a York University assignment. This application takes an input phrase and separates the words based on three word types:</p>
-                        <ol>
-                            <li>A word starting with 3 alphabetic characters</li>
-                            <li>A Word starting with 3 numeric digits</li>
-                            <li>Undefined word type (word is not of type 1 or 2)</li>
-                        </ol>
+                        <p>A phase parse web application created for an assignment while I was a student at York University. This application takes an input phrase and separates the words based on three specified word types.</p>
                         <Buttongroup>
                             <Button>HTML</Button>
                             <Button>CSS</Button>

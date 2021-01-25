@@ -27,7 +27,7 @@ const Buttongroup = styled.div `
     text-align: center;
 `
 
-const Button = styled.button `
+const Button = styled.a `
     background-color: #323232; 
     border: none;
     color: inherit;
@@ -50,11 +50,11 @@ export const Contact = () => {
                 <Title id="contact">Contact</Title>
                 <hr />
                 <h2>Thank you.</h2>
-                <p>Thank you for visiting my portfolio. If you are interested in a chat please contact me below.</p>
+                <p>Thank you for visiting my portfolio. If you are interested in a chat feel free to contact me using one of the links below.</p>
                 <Buttongroup>
-                    <Button>Email</Button>
-                    <Button>Linkedin</Button>
-                    <Button>GitHub</Button>
+                    <Button href="mailto:contact@matthewlanteigne.com">Email</Button>
+                    <Button href="https://www.linkedin.com/in/matthewlanteigne/" target="_blank">Linkedin</Button>
+                    <Button href="https://github.com/mattlanteigne" target="_blank">GitHub</Button>
                 </Buttongroup>
             </Flip>
         </Container>
