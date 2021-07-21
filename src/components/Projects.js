@@ -183,7 +183,7 @@ export const Projects = () => {
                     </Contentright>
                 </Project>
             </Fade>
-
+{/* 
             <Fade left>
                 <Project>
                     <Imgright src={ifa} />
@@ -199,12 +199,12 @@ export const Projects = () => {
                         </Buttongroup>
                     </Contentleft>
                 </Project>
-            </Fade>
+            </Fade> */}
 
-            <Fade right>
+            <Fade left>
                 <Project>
-                    <Imgleft src={v1} />
-                    <Contentright>
+                    <Imgright src={v1} />
+                    <Contentleft>
                         <Projecttitle>
                             Portfolio v2.0
                             <a href="https://www.matthewlanteigne.com/v2/" target="_blank" className="projectlink" ><FaExternalLinkAlt /></a>   
@@ -216,14 +216,14 @@ export const Projects = () => {
                             <Button>JavaScript</Button>
                             <Button>Bootstrap</Button>
                         </Buttongroup>
-                    </Contentright>
+                    </Contentleft>
                 </Project>
             </Fade>
 
-            <Fade left>
+            <Fade right>
                 <Project>
-                    <Imgright src={phrase} />
-                    <Contentleft>
+                    <Imgleft src={phrase} />
+                    <Contentright>
                         <Projecttitle>
                             Phrase Parse
                             <a href="https://www.matthewlanteigne.com/phrase/" target="_blank" className="projectlink" ><FaExternalLinkAlt /></a>
@@ -235,7 +235,7 @@ export const Projects = () => {
                             <Button>PHP</Button>
                             <Button>JavaScript</Button>
                         </Buttongroup>
-                    </Contentleft>
+                    </Contentright>
                 </Project>
             </Fade>
         

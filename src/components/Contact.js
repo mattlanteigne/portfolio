@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import Flip from 'react-reveal/Flip';
+import Lightspeed from 'react-reveal/LightSpeed';
 
 
 const Container = styled.div `
@@ -46,7 +46,7 @@ const Button = styled.a `
 export const Contact = () => {
     return (
         <Container>
-            <Flip left>
+            <Lightspeed left>
                 <Title id="contact">Contact</Title>
                 <hr />
                 <h2>Thank you.</h2>
@@ -56,7 +56,7 @@ export const Contact = () => {
                     <Button href="https://www.linkedin.com/in/matthewlanteigne/" target="_blank">Linkedin</Button>
                     <Button href="https://github.com/mattlanteigne" target="_blank">GitHub</Button>
                 </Buttongroup>
-            </Flip>
+            </Lightspeed>
         </Container>
     );
 }
